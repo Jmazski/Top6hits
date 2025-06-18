@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Top 6 Hitlijst - Radio Oidar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    #hitlijst {
+      max-width: 350px;
+      margin: 36px auto 24px auto;
+      font-size: 1.1em;
+      background: #fff;
+      padding: 24px 32px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+
+    .eersteNummer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.8em;
+      font-weight: bold;
+      color: #e63946;
+      text-align: center;
+      white-space: nowrap;
+      background: #fff8ee;
+      padding: 18px 38px;
+      border-radius: 20px;
+      box-shadow: 0 2px 16px rgba(230,57,70,0.09);
+      z-index: 10;
+    }
+
+    .derdeNummer {
+      position: fixed;
+      bottom: 24px;
+      right: 36px;
+      font-size: 1.6em;
+      font-weight: 500;
+      color: #457b9d;
+      background: #eef6fb;
+      padding: 12px 28px;
+      border-radius: 16px;
+      box-shadow: 0 1px 8px rgba(69,123,157,0.08);
+      z-index: 20;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h1>Top 6 Hitlijst</h1>
+  <ol id="hitlijst"></ol>
+
+  <div id="eersteNummer" class="eersteNummer"></div>
+  <div id="derdeNummer" class="derdeNummer"></div>
+
+  <script src="top6.js"></script>
+</body>
+</html>
